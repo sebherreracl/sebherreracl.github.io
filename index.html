@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Seb's Portfolio</title>
+  </head>
+  <body>
+    <div class="background">
+      <!-- HEADER -->
+      <header class="header" id="header">
+        <nav class="nav container">
+          <a href="#" class="nav__logo">Seb Herrera<i class="uil uil-globe"></i></a>
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list grid">
+              <li class="nav__item">
+                <a href="#home" class="nav__link">
+                  <i class="uil uil-estate nav__icon"></i>Accueil
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#about" class="nav__link">
+                  <i class="uil uil-book-reader nav__icon"></i>À propos
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#work" class="nav__link">
+                  <i class="uil uil-constructor nav__icon"></i>Travail
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#contact" class="nav__link">
+                  <i class="uil uil-message nav__icon"></i>Contactez-moi
+                </a>
+              </li>
+            </ul>
+            <i class="uil uil-times nav__close" id="nav-close"></i>
+          </div>
+          <div class="nav__btns">
+            <div class="nav__toggle" id="nav-toggle">
+              <i class="uil uil-bars"></i>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="page__hidden" id="logic-game">
+          <div class="fake__navbar"></div>
+        <div class="logic__consolelog" id="logic-consolelog">
+            <div class="logic__game-options">
+                <a href="#logic-gameurl" onclick="displayAll()"id="prueba" class="logic__game-options-buttons">
+                    <i class="uil uil-message button__icon" id="logic-retourner"></i> Retourner
+                  </a>
+                  <a href="" onclick="game()"class="logic__game-options-buttons" id="logic_demarrer">
+                    <i class="uil uil-message button__icon"></i> Démarrer
+                  </a>
+            </div>
+        </div>
+        <div class="logic__userinput">
+            <input type="text" id="input-user"><a href="" class="logic__userinput-button">
+                <i class="uil uil-message button__icon"></i> Envoyer
+              </a>
+            
+        </div>
+    </div>
+    <div class="page__hidden" id="kanye-west" >
+        <div class="kanye__west-container">
+            <div class="kanye__west-options">
+                <a href="#kanye-westurl" onclick="displayAll2()"id="prueba" class="logic__game-options-buttons">
+                    <i class="uil uil-message button__icon" id="logic-retourner"></i> Retourner
+                  </a>
+            </div>
+            <h1 id="citation">Ici va venir la citation</h1>
+            <button id="citationNew">Cliquez ici</button>
+          </div>
+    </div>
+      <main class="main" id="main">
+        <section class="home section" id="home">
+          <div class="home__container container grid">
+            <div class="home__content grid">
+              <div class="home__img">
+                <img class="home__mainpic" src="img/mainpic.jpg" alt="" />
+              </div>
+              <div class="home__social">
+                <a
+                  href="https://www.linkedin.com"
+                  target="_blank"
+                  class="home__social-icon"
+                  ><i class="uil uil-linkedin"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/sebherrera.cl"
+                  target="_blank"
+                  class="home__social-icon"
+                  ><i class="uil uil-instagram-alt"></i
+                ></a>
+                <a
+                  href="https://wa.me/32491037695"
+                  target="_blank"
+                  class="home__social-icon"
+                  ><i class="uil uil-whatsapp-alt"></i
+                ></a>
+              </div>
+
+              <div class="home__data">
+                <p class="home__pre">C'est Sebastian.</p>
+                <h1 class="home__title">Ici je devrais mettre une belle phrase.</h1>
+                <p class="home__post">
+                  Chilien de 24 ans en passe de devenir développeur web.
+                </p>
+                <a href="#contact" class="button button--flex">
+                  <i class="uil uil-message button__icon"></i>Contactez-moi
+                </a>
+              </div>
+              <div class="home__scroll">
+                <a href="#about" class="home__scroll-button button--flex">
+                  <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                  <span class="home__scroll-name">Scroll down</span>
+                  <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="About section" id="about">
+          <h2 class="section__title">À propos de moi.</h2>
+          <span class="section__subtitle"> Petit résumé de ma vie</span>
+          <div class="about__container container grid">
+            <img src="img//1.jpg" alt="" class="about__img" />
+            <div class="about__data">
+              <p class="about__description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia,
+                consequuntur! Architecto numquam nemo aliquam quae iure tempora
+                quo sunt veritatis beatae atque sit aliquid, doloremque animi
+                cupiditate, sequi vero vitae.
+              </p>
+            </div>
+        </div>
+            <div class="about__countries container">
+              <div>
+                <span class="about__countries-title">Chile</span>
+                <span class="about__countries-info">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Labore fuga ullam consectetur pariatur mollitia inventore
+                  reiciendis sapiente illo nulla quis consequatur atque
+                  excepturi velit aliquid vitae, explicabo quia magni eos.</span
+                >
+              </div>
+              <div>
+                <span class="about__countries-title">Australie</span>
+                <span class="about__countries-info">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Labore fuga ullam consectetur pariatur mollitia inventore
+                  reiciendis sapiente illo nulla quis consequatur atque
+                  excepturi velit aliquid vitae, explicabo quia magni eos.</span
+                >
+              </div>
+              <div>
+                <span class="about__countries-title">Belgique</span>
+                <span class="about__countries-info">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Labore fuga ullam consectetur pariatur mollitia inventore
+                  reiciendis sapiente illo nulla quis consequatur atque
+                  excepturi velit aliquid vitae, explicabo quia magni eos.</span
+                >
+              </div>
+            </div>
+            <div class="about__buttons">
+              <a href="pdf/" class="button button--flex">
+                Voulez-vous mon CV?<i
+                  class="uil uil-file-download-alt button__icon"
+                ></i>
+              </a>
+            </div>
+        </section>
+        <section class="work section" id="work">
+          <h2 class="section__title">Travail.</h2>
+          <p class="section__subtitle">Ce que j'ai fait en classe</p>
+          <div class="work__container container grid">
+            <div class="work__img">
+              <img src="img/milocsentree.jpg" alt="" />
+            </div>
+            <div class="work__data">
+              <p class="work__description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae,
+                iure deserunt? Ab molestiae quo dolore temporibus aspernatur eum
+                iste. At fugiat blanditiis, provident sit ut quo minima natus
+                labore eius.
+              </p>
+            </div>
+          </div>
+          <div class="work__links container">
+              <div class="work__links-container container grid">
+            <div class="work__links-each">
+                <a href="work/airbnb/airbnb.html"><img src="img/airbnb.png" class="work__links-each-img"  alt=""></a>
+              <h3 class="work__links-each-title">AirBnB</h2>
+              <p class="work__links-each-description">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+            </div>
+          <div class="work__links-each" id="kanye-westurl">
+              <a href="#" id="kanye-west-button"><img src="img/kanye.png" class="work__links-each-img" alt=""></a>
+            <h3 class="work__links-each-title">Kanye West</h2>
+            <p class="work__links-each-description">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+          </div>
+          <div class="work__links-each" id="logic-gameurl">
+              <a href="#" id="logic-button"><img src="img/logique.png" class="work__links-each-img" alt=""></a>
+            <h3 class="work__links-each-title">Logique Game</h2>
+            <p class="work__links-each-description">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+          <div class="other__works">
+            <a href="#" class="home__scroll-button button--flex">
+                <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                <span class="home__scroll-name">Other works</span>
+                <i class="uil uil-arrow-down home__scroll-arrow"></i>
+              </a>
+        </div>
+        </div> 
+        </section>
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact me</h2>
+            <span class="section__subtitle">Let's get in touch</span>
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-phone contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">
+                                Call me
+                            </h3>
+                            <span class="contact__subtitle">+32491037695</span>
+                        </div>
+                    </div>
+                    <div class="contact__information">
+                        <i class="uil uil-envelope-edit contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">
+                                E-mail
+                            </h3>
+                            <span class="contact__subtitle">sebdevelopper@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="contact__information">
+                        <i class="uil uil-map-marker contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">
+                                Location
+                            </h3>
+                            <span class="contact__subtitle">Bruxelles, Belgium</span>
+                        </div>
+                    </div>
+                </div>
+                <form action="" class="contact__form grid">
+                    <div class="contact__inputs">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Name</label>
+                            <input type="text" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">E-mail</label>
+                            <input type="e-mail" class="contact__input">
+                        </div>
+                    </div>
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Message</label>
+                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                    </div>
+                    <div>
+                        <a href="#" class="button button--flex">Send
+                            <i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </section>
+      </main>
+      <footer class="footer" id="footer">
+          <div class="footer__bg">
+              <div class="footer__container container grid">
+                  <div>
+                  <h1>Seb Herrera</h1>
+                  <span class="footer__subtitle">
+                      Web Development Student
+                  </span>
+                </div>
+                  <ul class="footer__links grid">
+                    <li>
+                        <a href="#about" class="footer__link">
+                          About
+                        </a>
+                    </li>
+                    <li>
+                      <a href="#work" class="footer__link">
+                        Work
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#contact" class="footer__link">
+                        Contact
+                      </a>
+                  </li>
+                </ul>
+                <div class="footer_socials">
+                  <a href="https://www.linkedin.com" target="_blank" class="footer__social"><i class="uil uil-linkedin"></i
+                    ></a>
+                  <a href="https://www.instagram.com" target="_blank" class="footer__social"><i class="uil uil-instagram-alt"></i></a>
+                  <a href="https://www.whatsapp.com" target="_blank" class="footer__social"><i class="uil uil-whatsapp-alt"></i></a>
+              </div>
+              </div>
+          </div>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
